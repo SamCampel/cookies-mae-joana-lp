@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cookies da Mãe Joana | Cookies recheados em Curitiba</title>
+<meta name="description" content="Cookies artesanais, premium e muito recheados na Água Verde, Curitiba. Delivery e retirada. Encomende pelo WhatsApp.">
+<!-- PENDENTE: trocar pelo endereço real do site quando houver domínio -->
+<link rel="canonical" href="https://DOMINIO-A-DEFINIR/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Cookies da Mãe Joana | Cookies recheados em Curitiba">
+<meta property="og:description" content="Cookies artesanais, premium e muito recheados na Água Verde, Curitiba. Delivery e retirada. Encomende pelo WhatsApp.">
+<!-- PENDENTE: usar URL absoluta da imagem quando o site estiver no ar -->
+<meta property="og:image" content="fotos/foto-07.webp">
+<meta name="theme-color" content="#FEE7D7">
+<link rel="icon" href="fotos/logo.webp" type="image/webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Rubik:wght@700..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap&text=%C3%81gua%20Verde%2C%20Curitiba%2C%20Paran%C3%A1">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Cookies da Mãe Joana",
+  "description": "Cookies artesanais, premium e muito recheados. Delivery e retirada.",
+  "telephone": "+554196963967",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Curitiba",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/cookiesdamaejoana/"]
+}
+</script>
+
+<style>
+/* Fallbacks com ajuste de métrica para evitar salto de layout */
+@font-face{font-family:"Rubik Fallback";src:local("Arial");size-adjust:103%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Figtree Fallback";src:local("Arial");size-adjust:101%;ascent-override:95%;descent-override:25%;line-gap-override:0%}
+
+:root{
+  /* Paleta: logo (pêssego e marrom) + referências */
+  --pessego:#FEE7D7;      /* fundo principal (cor do logo) */
+  --branco:#FFFBF7;       /* seções alternadas */
+  --pessego-2:#F6CDB4;    /* terceiro tom de fundo */
+  --choc:#4C3022;         /* texto e faixas escuras (marrom do logo) */
+  --choc-2:#3A2217;       /* rodapé */
+  --cacau:#7A4A32;        /* texto secundário, contornos */
+  --caramelo:#9E4F17;     /* botão primário, links */
+  --caramelo-2:#AA5719;   /* início do degradê do botão */
+  --foco:#9E4F17;
+
+  --f-titulo:"Rubik","Rubik Fallback",Arial,sans-serif;
+  --f-texto:"Figtree","Figtree Fallback",Arial,sans-serif;
+  --f-mao:"Caveat","Segoe Script","Bradley Hand",cursive;
+
+  --corpo:clamp(1.0625rem,1.03rem + .15vw,1.125rem);
+  --raio:1.75rem;
+  --espaco:clamp(3.5rem,8vw,6.5rem);
+  --grao:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--f-texto);font-size:var(--corpo);line-height:1.65;color:var(--choc);background:var(--pessego);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+h1,h2,h3{font-family:var(--f-titulo);font-weight:800;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,1.7rem + 4.2vw,4.6rem);line-height:1}
+h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3.1rem)}
+h3{font-size:clamp(1.35rem,1.2rem + .8vw,1.75rem);font-weight:700}
+p{margin:0;text-wrap:pretty;max-width:62ch}
+a{color:inherit}
+:where(a,button):focus-visible{outline:3px solid var(--foco);outline-offset:3px;border-radius:.4rem}
+.escuro :where(a,button):focus-visible,.escuro-foco :where(a,button):focus-visible{outline-color:var(--pessego)}
+[id]{scroll-margin-top:5.5rem}
+.contem{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.pular{position:absolute;left:1rem;top:-4rem;background:var(--choc);color:var(--pessego);padding:.75rem 1rem;border-radius:.5rem;z-index:100;transition:top .2s}
+.pular:focus{top:1rem}
+
+/* ---------- Botões ---------- */
+.btn{--bg:transparent;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3.25rem;padding:.45rem .5rem .45rem 1.5rem;border-radius:999px;border:2px solid transparent;font:700 1rem/1.2 var(--f-texto);text-decoration:none;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,color .2s ease,border-color .2s ease;overflow:hidden;isolation:isolate;-webkit-tap-highlight-color:transparent}
+.btn .ico{flex:none;display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--choc);color:#fff}
+.btn .ico svg{width:1.3rem;height:1.3rem}
+.btn-primario{color:#fff;background:linear-gradient(135deg,var(--caramelo-2),var(--caramelo));box-shadow:0 8px 20px -8px rgba(76,48,34,.55)}
+.btn-primario::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.28) 50%,transparent 65%);transform:translateX(-120%);transition:transform .6s ease}
+.btn-primario:active{transform:translateY(0) scale(.98);box-shadow:0 3px 10px -6px rgba(76,48,34,.6)}
+.btn-sec{padding-inline:1.5rem;color:var(--choc);border-color:var(--cacau);background:transparent}
+.btn-sec:active{transform:scale(.98)}
+.btn-sec .ico{background:transparent;color:inherit;width:1.5rem;height:1.5rem;margin-right:-.25rem}
+.btn-sec .ico svg{width:1.1rem;height:1.1rem}
+.btn-terc{min-height:2.75rem;padding:.4rem .1rem;border-radius:.4rem;color:var(--caramelo);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em;gap:.5rem}
+.btn-terc svg{width:1.1rem;height:1.1rem;transition:transform .2s ease}
+.btn-terc:active{opacity:.8}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.5;pointer-events:none;box-shadow:none}
+.btn-bloco{width:100%}
+@media (hover:hover){
+  .btn-primario:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(76,48,34,.6)}
+  .btn-primario:hover::after{transform:translateX(120%)}
+  .btn-sec:hover{background:var(--choc);color:var(--pessego);border-color:var(--choc)}
+  .btn-terc:hover svg{transform:translateX(4px)}
+}
+/* Sobre fundo escuro */
+.escuro .btn-primario{color:var(--choc);background:linear-gradient(135deg,#FFF3EA,var(--pessego-2));box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+.escuro .btn-primario .ico{background:var(--choc);color:var(--pessego)}
+.escuro .btn-primario::after{background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.7) 50%,transparent 65%)}
+.escuro .btn-sec{color:var(--pessego);border-color:var(--pessego)}
+@media (hover:hover){.escuro .btn-sec:hover{background:var(--pessego);color:var(--choc);border-color:var(--pessego)}}
+.escuro .btn-terc{color:var(--pessego)}
+
+/* ---------- Topo ---------- */
+.topo{position:sticky;top:0;z-index:50;background:rgba(254,231,215,.94);backdrop-filter:blur(8px);border-bottom:2px solid rgba(76,48,34,.12)}
+.topo .contem{display:flex;align-items:center;gap:.5rem;min-height:4.5rem;flex-wrap:wrap;padding-block:.35rem}
+.marca{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-right:auto;min-height:44px}
+.marca img{width:2.75rem;height:2.75rem;border-radius:50%;background:var(--pessego)}
+.marca span{font:800 .95rem/1.05 var(--f-titulo);max-width:6.5rem}
+.redes{display:flex;gap:.4rem;list-style:none;margin:0;padding:0}
+.redes a{display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;border:2px solid var(--cacau);color:var(--choc);transition:background-color .2s,color .2s,border-color .2s}
+.redes svg{width:1.3rem;height:1.3rem}
+.escuro .redes a{border-color:var(--pessego);color:var(--pessego)}
+@media (hover:hover){
+  .redes a:hover{background:var(--choc);border-color:var(--choc);color:var(--pessego)}
+  .escuro .redes a:hover{background:var(--pessego);border-color:var(--pessego);color:var(--choc)}
+}
+.menu-btn{display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;border:2px solid var(--choc);background:var(--choc);color:var(--pessego);cursor:pointer;padding:0}
+.menu-btn svg{width:1.4rem;height:1.4rem}
+.menu-btn .fechar{display:none}
+.menu-btn[aria-expanded="true"] .abrir{display:none}
+.menu-btn[aria-expanded="true"] .fechar{display:block}
+.nav{flex-basis:100%;order:5}
+.nav:not(.aberto){display:none}
+.nav ul{list-style:none;margin:0;padding:.25rem 0 1rem;display:grid}
+.nav a{display:flex;align-items:center;min-height:3rem;font-weight:700;text-decoration:none;border-bottom:1px solid rgba(76,48,34,.15)}
+@media (min-width:800px){
+  .topo .contem{flex-wrap:nowrap;gap:1.5rem}
+  .marca span{max-width:none;font-size:1.15rem}
+  .menu-btn{display:none}
+  .nav{flex-basis:auto;order:0;margin-left:auto}
+  .nav:not(.aberto){display:block}
+  .nav ul{display:flex;gap:1.75rem;padding:0}
+  .nav a{border:0;min-height:2.75rem}
+  .nav a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.3em}
+  .marca{margin-right:0}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;background:radial-gradient(55% 65% at 80% 42%,#fff 0%,rgba(255,255,255,0) 72%),radial-gradient(45% 55% at 0% 0%,rgba(255,255,255,.75),rgba(255,255,255,0) 70%),linear-gradient(180deg,#FEEBDD,#FBDCC6);padding-block:2rem calc(var(--espaco) + 1.5rem)}
+.hero .contem{display:grid;gap:2rem;align-items:center;justify-items:center;text-align:center}
+.hero-foto{position:relative;width:min(84%,24rem);aspect-ratio:1;filter:drop-shadow(0 22px 22px rgba(76,48,34,.25));animation:entrada .8s cubic-bezier(.2,.7,.2,1) both}
+/* Elemento de assinatura: a foto vira um cookie com mordida */
+.hero-foto::before{content:"";position:absolute;inset:-7%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#FFF6EF 65%,#FBE6D6);box-shadow:0 0 0 2px rgba(255,255,255,.9),0 18px 30px -12px rgba(76,48,34,.25)}
+.hero-foto img{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 45%;border-radius:50%;
+  -webkit-mask-image:radial-gradient(ellipse 11% 11% at 85% 10%,transparent 98%,#000 100%),radial-gradient(ellipse 8% 8% at 94.5% 25%,transparent 98%,#000 100%),radial-gradient(ellipse 7% 7% at 70% 3.5%,transparent 98%,#000 100%);
+  mask-image:radial-gradient(ellipse 11% 11% at 85% 10%,transparent 98%,#000 100%),radial-gradient(ellipse 8% 8% at 94.5% 25%,transparent 98%,#000 100%),radial-gradient(ellipse 7% 7% at 70% 3.5%,transparent 98%,#000 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.hero-texto{display:grid;gap:1.25rem;justify-items:center;animation:entrada .8s .12s cubic-bezier(.2,.7,.2,1) both}
+.hero-texto p{font-size:clamp(1.1rem,1.04rem + .3vw,1.3rem)}
+.hero-acoes{display:grid;gap:.75rem;width:100%;max-width:24rem;margin-top:.5rem}
+@keyframes entrada{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+@media (min-width:800px){
+  .hero{padding-block:3.5rem calc(var(--espaco) + 1.5rem)}
+  .hero .contem{grid-template-columns:1.05fr .95fr;gap:3rem;text-align:left;justify-items:start}
+  .hero-texto{justify-items:start}
+  .hero-foto{order:2;justify-self:center;width:min(100%,25rem)}
+  .hero-acoes{display:flex;flex-wrap:wrap;max-width:none;align-items:center;gap:1rem 1.5rem}
+}
+
+/* ---------- Diferenciais ---------- */
+.difs{position:relative;background:var(--branco);padding-block:2.25rem 2.75rem;margin-top:-2rem;border-radius:2rem 2rem 0 0;border-top:2px solid rgba(76,48,34,.1)}
+.difs ul{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.difs li{display:flex;gap:1rem;align-items:center;padding-left:1rem;border-left:2px solid var(--pessego-2)}
+.difs .circ{flex:none;display:grid;place-items:center;width:3.5rem;height:3.5rem;border-radius:50%;background:var(--pessego-2);color:var(--choc)}
+.difs .circ svg{width:1.7rem;height:1.7rem}
+.difs strong{display:block;font:700 1.15rem/1.25 var(--f-titulo)}
+.difs span.s{display:block;font-size:.9375rem;color:var(--cacau);line-height:1.4}
+
+/* ---------- Produtos ---------- */
+.produtos{padding-block:var(--espaco);background:var(--pessego)}
+.cab{display:grid;gap:.9rem;margin-bottom:2.5rem}
+.breve{display:inline-block;width:fit-content;font-size:.875rem;font-weight:700;padding:.2rem .7rem;border-radius:999px;border:2px dashed var(--cacau);color:var(--cacau)}
+.grupo{margin-top:3rem}
+.grandes .grupo{margin-top:0}
+.tit-grupo{font-size:clamp(1.35rem,1.2rem + .8vw,1.75rem);font-weight:700;margin-bottom:1.5rem}
+.forminha{background:var(--branco);padding-block:var(--espaco)}
+.forminha .moldura{border-color:var(--choc)}
+.grupo>h3{margin-bottom:1.25rem}
+.grade2{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+@media (max-width:359px){.grade2{grid-template-columns:1fr}}
+.item{display:grid;gap:.75rem;align-content:start}
+.moldura{overflow:hidden;border-radius:var(--raio);border:2px solid var(--choc);background:var(--pessego-2)}
+.moldura img{width:100%;height:100%;object-fit:cover}
+.item .btn{min-height:3rem;font-size:.9375rem;padding:.4rem .9rem;text-align:center}
+.item .btn-branco{justify-content:space-between;gap:.5rem;padding:.35rem .4rem .35rem 1rem;text-align:left;line-height:1.15;font-size:.875rem;color:var(--choc);background:linear-gradient(135deg,#fff,#FFF6EF);border-color:rgba(76,48,34,.12);box-shadow:0 8px 18px -10px rgba(76,48,34,.5)}
+.item .btn-branco .ico{width:2.2rem;height:2.2rem;background:var(--choc);color:var(--pessego)}
+.item .btn-branco::after{background:linear-gradient(105deg,transparent 35%,rgba(76,48,34,.1) 50%,transparent 65%)}
+@media (min-width:768px){.grade2{gap:1.5rem}.item .btn{font-size:1rem}.item .btn-branco{font-size:1rem;padding-left:1.25rem}}
+@media (min-width:1024px){.grade2.quatro{grid-template-columns:repeat(4,1fr)}}
+.forma{display:grid;gap:1.5rem;align-items:center}
+.forma .moldura{aspect-ratio:275/327;max-width:26rem;width:100%}
+.forma .texto{display:grid;gap:1rem;justify-items:start}
+@media (min-width:768px){.forma{grid-template-columns:minmax(0,26rem) 1fr;gap:3rem}}
+.trio{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+.trio .moldura{aspect-ratio:1}
+.trio .moldura.rect{aspect-ratio:1}
+.trio .moldura:nth-child(2){border-radius:999px 999px var(--raio) var(--raio)}
+
+/* ---------- Sobre ---------- */
+.sobre{background:var(--branco);padding-block:var(--espaco)}
+.sobre .contem{display:grid;gap:2rem;align-items:center;justify-items:center;text-align:center}
+.sobre .logo{width:min(55%,12rem);aspect-ratio:1;border-radius:50%;border:2px solid var(--choc);padding:.4rem;background:var(--pessego)}
+.sobre .logo img{width:100%;height:100%;border-radius:50%}
+.sobre .texto{display:grid;gap:1rem;justify-items:center}
+@media (min-width:768px){.sobre .contem{grid-template-columns:14rem 1fr;gap:3.5rem;text-align:left;justify-items:start}.sobre .texto{justify-items:start}.sobre .logo{width:100%}}
+
+/* ---------- Faixas escuras ---------- */
+.escuro{position:relative;background:radial-gradient(70% 90% at 15% 0%,#6A4230 0%,transparent 70%),linear-gradient(180deg,var(--choc),var(--choc-2));color:var(--pessego);isolation:isolate}
+.escuro::before{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--grao);opacity:.08;pointer-events:none}
+
+.depo{padding-block:var(--espaco)}
+.depo h2{margin-bottom:2.5rem}
+.depo .lista{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.depo blockquote{margin:0;padding:1.25rem 0 0;border-top:2px solid rgba(254,231,215,.35)}
+.depo blockquote p{font:600 1.2rem/1.5 var(--f-texto)}
+.depo cite{display:block;margin-top:.9rem;font-style:normal;font-size:.9375rem;opacity:.85}
+.depo .aspas{width:2rem;height:2rem;margin-bottom:.5rem;color:var(--pessego-2)}
+
+/* ---------- Como pedir ---------- */
+.como{background:linear-gradient(180deg,var(--pessego-2),#F9D6C0);padding-block:var(--espaco)}
+.passos{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+.passos li{display:grid;gap:.6rem;align-content:start;padding:1.5rem;border:2px solid var(--choc);border-radius:var(--raio);background:var(--pessego)}
+.pilula{width:fit-content;padding:.15rem .85rem;border:2px solid var(--choc);border-radius:999px;font-weight:700;font-size:.9375rem}
+.como .aviso{margin-top:1.75rem}
+
+/* ---------- Onde ---------- */
+.onde{background:var(--branco);padding-block:var(--espaco)}
+.onde .contem{display:grid;gap:2.5rem}
+@media (min-width:800px){.onde .contem{grid-template-columns:1fr 1fr;gap:4rem;align-items:start}}
+.onde .info{display:grid;gap:1.25rem;justify-items:start}
+.mao{font:600 clamp(2rem,1.6rem + 2vw,3rem)/1 var(--f-mao);color:var(--caramelo)}
+.onde address{font-style:normal}
+.onde .mao{text-wrap:balance}
+.horarios{width:100%;border-collapse:collapse;font-size:1.0625rem}
+.horarios caption{text-align:left;font:700 1.35rem var(--f-titulo);padding-bottom:.75rem}
+.horarios th,.horarios td{padding:.7rem .25rem;border-bottom:1px solid rgba(76,48,34,.18);text-align:left;font-weight:400}
+.horarios td{text-align:right;font-variant-numeric:tabular-nums}
+.horarios tr[aria-current="date"] th,.horarios tr[aria-current="date"] td{font-weight:700;background:var(--pessego)}
+.horarios tr[aria-current="date"] th{padding-left:.6rem;border-radius:.6rem 0 0 .6rem}
+.horarios tr[aria-current="date"] td{padding-right:.6rem;border-radius:0 .6rem .6rem 0}
+
+/* ---------- Chamada final ---------- */
+.final{padding-block:var(--espaco);text-align:center}
+.final .contem{display:grid;gap:1.5rem;justify-items:center}
+.final .btn{width:100%;max-width:24rem}
+
+/* ---------- Rodapé ---------- */
+.rodape{background:var(--choc-2);color:var(--pessego);padding-block:3.5rem calc(2rem + env(safe-area-inset-bottom));position:relative;isolation:isolate;border-top:1px solid rgba(254,231,215,.2)}
+.rodape::before{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--grao);opacity:.06}
+.rodape .colunas{display:grid;gap:2.25rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.rodape h2{font-size:1.15rem;margin-bottom:.75rem}
+.rodape ul{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
+.rodape .redes{display:grid;gap:.75rem;justify-items:start}
+.rodape a{display:inline-flex;align-items:center;min-height:2.75rem}
+.rodape a:not(.marca-r):not(.redes a){text-decoration:underline;text-underline-offset:.25em}
+.rodape .redes a{display:inline-flex;align-items:center;gap:.75rem;width:auto;height:auto;min-height:3.25rem;padding:.35rem 1.4rem .35rem .4rem;border:2px solid var(--pessego);border-radius:999px;color:var(--pessego);text-decoration:none;font-weight:700;transition:background-color .2s,color .2s,transform .2s}
+.rodape .redes .ic{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--pessego);color:var(--choc-2);transition:background-color .2s,color .2s}
+.rodape .redes .ic svg{width:1.3rem;height:1.3rem}
+.rodape .redes a:active{transform:scale(.97)}
+@media (hover:hover){.rodape .redes a:hover{background:var(--pessego);color:var(--choc-2);border-color:var(--pessego)}.rodape .redes a:hover .ic{background:var(--choc-2);color:var(--pessego)}}
+.rodape .marca-r{gap:.6rem;font:800 1.15rem var(--f-titulo);text-decoration:none}
+.rodape .marca-r img{width:3rem;height:3rem;border-radius:50%}
+.rodape p{font-size:1rem}
+.rodape .fim{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid rgba(254,231,215,.2);font-size:.875rem;opacity:.85;padding-right:4.5rem}
+
+/* ---------- Botão flutuante ---------- */
+.flutuante{position:fixed;z-index:60;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));display:grid;place-items:center;width:3.6rem;height:3.6rem;border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--caramelo-2),var(--caramelo));box-shadow:0 10px 24px -6px rgba(76,48,34,.6);transition:transform .2s,box-shadow .2s}
+.flutuante svg{width:1.9rem;height:1.9rem}
+.flutuante:focus-visible{outline-color:var(--choc);outline-offset:4px}
+.flutuante:active{transform:scale(.95)}
+@media (hover:hover){.flutuante:hover{transform:translateY(-2px)}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-8.1 14.4L2.6 21.4l4.6-1.2A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path fill="currentColor" d="M8.7 7.4c-.3 0-.7.1-1 .5-.4.5-.9 1.4-.5 2.6.5 1.4 1.7 3 3.3 4.2 1.5 1.1 3 1.6 4.1 1.5 1-.1 1.8-.9 2-1.7.1-.4 0-.6-.3-.7l-1.8-.9c-.3-.1-.5 0-.7.2l-.6.8c-.1.2-.3.2-.5.1-1-.4-2-1.2-2.800-2.400-.1-.2-.1-.4 0-.5l.5-.7c.1-.2.1-.4 0-.6l-.8-1.800c-.1-.3-.3-.5-.5-.5z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-baixo" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.400-6.500 11-6.500 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="currentColor"/></symbol>
+    <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.500a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-cookie" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 4 4 0 0 1-4-4 4 4 0 0 1-5-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="10" r="1.200" fill="currentColor"/><circle cx="14" cy="14.500" r="1.200" fill="currentColor"/><circle cx="8.500" cy="15" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.500 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-aspas" viewBox="0 0 24 24"><path fill="currentColor" d="M4 17.500V13c0-4 2-6.600 6-7.500l.6 1.500C8.500 7.700 7.700 9 7.600 11H10v6.500H4zm10 0V13c0-4 2-6.600 6-7.500l.6 1.500c-2.100.7-2.900 2-3 4H20v6.500h-6z"/></symbol>
+  </defs>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="contem">
+    <a class="marca" href="#topo" id="topo">
+      <img src="fotos/logo.webp" width="146" height="146" alt="Logo da Cookies da Mãe Joana">
+      <span>Cookies da Mãe Joana</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg class="abrir" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="fechar" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#produtos">Cookies</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#como-pedir">Como pedir</a></li>
+        <li><a href="#onde-estamos">Onde estamos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="contem">
+      <div class="hero-foto">
+        <img src="fotos/foto-07.webp" width="276" height="276" fetchpriority="high" alt="Cookie aberto ao meio, com recheio cremoso verde e pedaços de pistache, segurado com luvas pretas">
+      </div>
+      <div class="hero-texto">
+        <h1 id="titulo-hero">Cookies artesanais muito recheados</h1>
+        <p>Cookies artesanais, premium e muito recheados, feitos na Água Verde, em Curitiba. Delivery e retirada.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" href="https://wa.me/554196963967?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20cookies." rel="noopener">
+            <span>Encomendar pelo WhatsApp</span>
+            <span class="ico" aria-hidden="true"><svg><use href="#i-wa"/></svg></span>
+          </a>
+          <a class="btn btn-sec" href="#produtos"><span>Ver os cookies</span><span class="ico" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="difs" aria-label="Diferenciais">
+    <div class="contem">
+      <ul>
+        <li><span class="circ" aria-hidden="true"><svg><use href="#i-cookie"/></svg></span><div><strong>Artesanais e premium</strong><span class="s">Cookies muito recheados</span></div></li>
+        <li><span class="circ" aria-hidden="true"><svg><use href="#i-sacola"/></svg></span><div><strong>Delivery e retirada</strong><span class="s">Peça pelo WhatsApp</span></div></li>
+        <li><span class="circ" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><div><strong>Água Verde, Curitiba</strong><span class="s">Paraná</span></div></li>
+        <li><span class="circ" aria-hidden="true"><svg><use href="#i-relogio"/></svg></span><div><strong>Segunda a sábado</strong><span class="s">Domingo fechado</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="produtos" id="produtos" aria-labelledby="titulo-produtos">
+    <div class="contem">
+      <div class="cab">
+        <h2 id="titulo-produtos">Os cookies</h2>
+        <p>Chame no WhatsApp e pergunte quais sabores estão disponíveis.</p>
+        <span class="breve">Nomes e sabores: em breve</span>
+      </div>
+
+      <div class="grupo">
+        <h3>Cookies recheados</h3>
+        <div class="grade2 quatro">
+          <article class="item">
+            <div class="moldura" style="aspect-ratio:276/328"><img src="fotos/foto-02.webp" width="276" height="328" loading="lazy" decoding="async" alt="Cookie partido ao meio, com recheio de creme de chocolate ao leite"></div>
+            <a class="btn btn-primario btn-branco btn-bloco" href="https://wa.me/554196963967?text=Oi!%20Vi%20o%20cookie%20com%20recheio%20de%20chocolate%20ao%20leite%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar pelo WhatsApp</span><span class="ico" aria-hidden="true"><svg><use href="#i-seta"/></svg></span></a>
+          </article>
+          <article class="item">
+            <div class="moldura" style="aspect-ratio:277/331"><img src="fotos/foto-08.webp" width="277" height="331" loading="lazy" decoding="async" alt="Cookie com chocolate derretido escorrendo por cima"></div>
+            <a class="btn btn-primario btn-branco btn-bloco" href="https://wa.me/554196963967?text=Oi!%20Vi%20o%20cookie%20com%20calda%20de%20chocolate%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar pelo WhatsApp</span><span class="ico" aria-hidden="true"><svg><use href="#i-seta"/></svg></span></a>
+          </article>
+          <article class="item">
+            <div class="moldura" style="aspect-ratio:277/331"><img src="fotos/foto-06.webp" width="277" height="331" loading="lazy" decoding="async" alt="Cookie de massa escura aberto, com recheio de creme branco e chocolate"></div>
+            <a class="btn btn-primario btn-branco btn-bloco" href="https://wa.me/554196963967?text=Oi!%20Vi%20o%20cookie%20de%20massa%20escura%20com%20recheio%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar pelo WhatsApp</span><span class="ico" aria-hidden="true"><svg><use href="#i-seta"/></svg></span></a>
+          </article>
+          <article class="item">
+            <div class="moldura" style="aspect-ratio:277/332"><img src="fotos/foto-04.webp" width="277" height="332" loading="lazy" decoding="async" alt="Cookie dourado aberto, com recheio cremoso de chocolate branco"></div>
+            <a class="btn btn-primario btn-branco btn-bloco" href="https://wa.me/554196963967?text=Oi!%20Vi%20o%20cookie%20com%20recheio%20de%20chocolate%20branco%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar pelo WhatsApp</span><span class="ico" aria-hidden="true"><svg><use href="#i-seta"/></svg></span></a>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="forminha" aria-labelledby="titulo-forminha">
+    <div class="contem">
+      <h2 class="tit-grupo" id="titulo-forminha">Cookies na forminha</h2>
+        <div class="forma">
+          <div class="moldura"><img src="fotos/foto-05.webp" width="275" height="327" loading="lazy" decoding="async" alt="Três cookies assados em formas retangulares: um com gotas de chocolate, um com wafer e um com biscoito Lotus"></div>
+          <div class="texto">
+            <p>Nas fotos: um com gotas de chocolate, um com wafer e um com biscoito Lotus. Pergunte o que há disponível.</p>
+            <a class="btn btn-primario" href="https://wa.me/554196963967?text=Oi!%20Vi%20os%20cookies%20na%20forminha%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar pelo WhatsApp</span><span class="ico" aria-hidden="true"><svg><use href="#i-wa"/></svg></span></a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="produtos grandes" aria-labelledby="titulo-grandes">
+    <div class="contem">
+      <div class="grupo">
+        <h2 class="tit-grupo" id="titulo-grandes">Cookies grandes</h2>
+        <div class="trio">
+          <div class="moldura"><img src="fotos/foto-09.webp" width="275" height="331" loading="lazy" decoding="async" alt="Cookie grande assado em panela redonda, sobre toalha xadrez" style="object-position:50% 50%"></div>
+          <div class="moldura"><img src="fotos/foto-10.webp" width="710" height="835" loading="lazy" decoding="async" alt="Cookie grande de panela coberto com nozes picadas"></div>
+          <div class="moldura"><img src="fotos/foto-11.webp" width="710" height="855" loading="lazy" decoding="async" alt="Cookie grande de massa escura em panela, com pedaços de chocolate branco"></div>
+        </div>
+        <p style="margin-top:1.25rem"><a class="btn btn-terc" href="https://wa.me/554196963967?text=Oi!%20Vi%20os%20cookies%20grandes%20no%20site%20e%20quero%20encomendar." rel="noopener"><span>Encomendar um cookie grande pelo WhatsApp</span><svg aria-hidden="true"><use href="#i-seta"/></svg></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre" aria-labelledby="titulo-sobre">
+    <div class="contem">
+      <div class="logo"><img src="fotos/logo.webp" width="146" height="146" loading="lazy" decoding="async" alt="Ilustração da marca: uma mulher de olhos fechados mordendo um cookie"></div>
+      <div class="texto">
+        <h2 id="titulo-sobre">Cookies da Mãe Joana</h2>
+        <p>Doceria de cookies artesanais, premium e muito recheados, na Água Verde, em Curitiba. Os pedidos são feitos pelo WhatsApp, com delivery e retirada.</p>
+        <span class="breve">A história da Mãe Joana: em breve</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="depo escuro" id="depoimentos" aria-labelledby="titulo-depo">
+    <div class="contem">
+      <h2 id="titulo-depo">Quem já provou</h2>
+      <div class="lista">
+        <blockquote>
+          <svg class="aspas" aria-hidden="true"><use href="#i-aspas"/></svg>
+          <p>Aqui em casa somos fãs de cookies e, sinceramente, ainda não tínhamos provado nenhum tão bom quanto o de vocês em Curitiba.</p>
+          <cite>Cliente, por WhatsApp</cite>
+        </blockquote>
+        <blockquote>
+          <svg class="aspas" aria-hidden="true"><use href="#i-aspas"/></svg>
+          <p>Tamanho perfeito, muita qualidade, bem recheados e o que me impressionou é que são crocantes por fora e macios por dentro.</p>
+          <cite>Cliente, por WhatsApp</cite>
+        </blockquote>
+        <blockquote>
+          <svg class="aspas" aria-hidden="true"><use href="#i-aspas"/></svg>
+          <p>Que cookie bom, nunca comi um creme de kinder tão bom.</p>
+          <cite>Cliente, por WhatsApp</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="como" id="como-pedir" aria-labelledby="titulo-como">
+    <div class="contem">
+      <h2 id="titulo-como">Como pedir</h2>
+      <ol class="passos">
+        <li><span class="pilula">Passo 1</span><h3>Escolha os cookies</h3><p>Veja as fotos desta página e escolha o que você quer.</p></li>
+        <li><span class="pilula">Passo 2</span><h3>Chame no WhatsApp</h3><p>Mande uma mensagem com o seu pedido e combine tudo por lá.</p></li>
+        <li><span class="pilula">Passo 3</span><h3>Retire ou receba</h3><p>Retire na Água Verde ou peça delivery.</p></li>
+      </ol>
+      <p class="aviso"><span class="breve">Prazo de encomenda e área de entrega: em breve</span></p>
+    </div>
+  </section>
+
+  <section class="onde" id="onde-estamos" aria-labelledby="titulo-onde">
+    <div class="contem">
+      <div class="info">
+        <h2 id="titulo-onde">Onde estamos</h2>
+        <address class="mao">Água Verde, Curitiba, Paraná</address>
+      </div>
+      <table class="horarios">
+        <caption>Horário de atendimento</caption>
+        <tbody>
+          <tr data-dia="1"><th scope="row">Segunda-feira</th><td>12:00 – 18:00</td></tr>
+          <tr data-dia="2"><th scope="row">Terça-feira</th><td>12:00 – 18:00</td></tr>
+          <tr data-dia="3"><th scope="row">Quarta-feira</th><td>13:00 – 18:00</td></tr>
+          <tr data-dia="4"><th scope="row">Quinta-feira</th><td>13:00 – 18:00</td></tr>
+          <tr data-dia="5"><th scope="row">Sexta-feira</th><td>12:00 – 18:00</td></tr>
+          <tr data-dia="6"><th scope="row">Sábado</th><td>13:00 – 18:00</td></tr>
+          <tr data-dia="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="final escuro" aria-labelledby="titulo-final">
+    <div class="contem">
+      <h2 id="titulo-final">Bateu a vontade de cookie?</h2>
+      <p>Mande uma mensagem e faça o seu pedido, com retirada ou delivery.</p>
+      <a class="btn btn-primario" href="https://wa.me/554196963967?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20cookies." rel="noopener">
+        <span>Encomendar pelo WhatsApp</span>
+        <span class="ico" aria-hidden="true"><svg><use href="#i-wa"/></svg></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape escuro">
+  <div class="contem">
+    <div class="colunas">
+      <div>
+        <a class="marca-r" href="#topo"><img src="fotos/logo.webp" width="146" height="146" loading="lazy" decoding="async" alt=""><span>Cookies da Mãe Joana</span></a>
+        <p>Cookies artesanais, premium e muito recheados. Água Verde, Curitiba.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2>Navegação</h2>
+        <ul>
+          <li><a href="#produtos">Os cookies</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#como-pedir">Como pedir</a></li>
+          <li><a href="#onde-estamos">Onde estamos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/554196963967" rel="noopener">WhatsApp (41) 9696-3967</a></li>
+          <li>Água Verde, Curitiba, Paraná</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Redes</h2>
+        <ul class="redes" aria-label="Redes sociais no rodapé">
+          <li><a href="https://www.instagram.com/cookiesdamaejoana/" rel="noopener"><span class="ic" aria-hidden="true"><svg><use href="#i-ig"/></svg></span><span>Instagram</span></a></li>
+          <li><a href="https://wa.me/554196963967" rel="noopener"><span class="ic" aria-hidden="true"><svg><use href="#i-wa"/></svg></span><span>WhatsApp</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fim">© Cookies da Mãe Joana</p>
+  </div>
+</footer>
+
+<a class="flutuante" href="https://wa.me/554196963967?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20cookies." aria-label="Encomendar cookies pelo WhatsApp" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var btn=document.getElementById('menu-btn'),menu=document.getElementById('menu');
+  function abrir(v){menu.classList.toggle('aberto',v);btn.setAttribute('aria-expanded',v);btn.setAttribute('aria-label',v?'Fechar menu':'Abrir menu')}
+  btn.addEventListener('click',function(){abrir(!menu.classList.contains('aberto'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('aberto')){abrir(false);btn.focus()}});
+  document.addEventListener('click',function(e){if(menu.classList.contains('aberto')&&!menu.contains(e.target)&&!btn.contains(e.target))abrir(false)});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))abrir(false)});
+  var hoje=document.querySelector('.horarios tr[data-dia="'+new Date().getDay()+'"]');
+  if(hoje)hoje.setAttribute('aria-current','date');
+})();
+</script>
+</body>
+</html>
